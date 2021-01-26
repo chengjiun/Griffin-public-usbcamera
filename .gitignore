@@ -1,0 +1,7 @@
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*/CMakeFiles/
+Game Engine/Makefile
+Game Engine/CMakeCache.txt
+Game Engine/cmake_install*
