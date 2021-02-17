@@ -30,6 +30,15 @@ https://towardsdatascience.com/making-my-toddlers-dream-of-flying-come-true-with
     ```
     ~/Workspace/Griffin-public/Game\ Engine/Fly
     ```
+- PROBLEM: sound tracks are missing: 
+```
+Failed to open sound file "/home/gusn/Dev/Dexie-VR/Fly/build/resources/reset.wav" (couldn't open stream)
+[Error][Airplane.cpp:76] Unable to load sound file/home/gusn/Dev/Dexie-VR/Fly/build/resources/reset.wav
+Failed to open sound file "/home/gusn/Dev/Dexie-VR/Fly/build/resources/wind.wav" (couldn't open stream)
+[Error][Airplane.cpp:76] Unable to load sound file/home/gusn/Dev/Dexie-VR/Fly/build/resources/wind.wav
+Failed to open sound file "/home/gusn/Dev/Dexie-VR/Fly/build/resources/eagle.wav" (couldn't open stream)
+[Error][Airplane.cpp:76] Unable to load sound file/home/gusn/Dev/Dexie-VR/Fly/build/resources/eagle.wav
+```
 
 ## python api
 
@@ -45,4 +54,5 @@ cd ~/
 - download ssd-mobilenetV2 model from tf hub 
     * link: https://tfhub.dev/tensorflow/ssd_mobilenet_v2/2?tf-hub-format=compressed
     * put it to Python\ Apps/models/ssd/
-  
+ 
+ 
