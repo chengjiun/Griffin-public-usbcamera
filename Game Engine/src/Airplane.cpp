@@ -63,9 +63,9 @@ Airplane::Airplane() :
     treeTransform = glm::scale(treeTransform, {0.065f, 0.065f, 0.05f});
     m_tree.setTransform(treeTransform);
     
-    m_resetSound = loadSound("/home/gusn/Dev/Dexie-VR/Fly/build/resources/reset.wav", false, m_resetSoundBuffer);
-    m_windSound = loadSound("/home/gusn/Dev/Dexie-VR/Fly/build/resources/wind.wav", true, m_windSoundBuffer);
-    m_eagleSound = loadSound("/home/gusn/Dev/Dexie-VR/Fly/build/resources/eagle.wav", false, m_eagleSoundBuffer);
+    m_resetSound = loadSound("~/projects/Griffin-public-usbcamera/Game Engine/resources/reset.wav", false, m_resetSoundBuffer);
+    m_windSound = loadSound("~/projects/Griffin-public-usbcamera/Game Engine/wind.wav", true, m_windSoundBuffer);
+    m_eagleSound = loadSound("~/projects/Griffin-public-usbcamera/Game Engine/eagle.wav", false, m_eagleSoundBuffer);
 }
 
 sf::Sound Airplane::loadSound(std::string soundPath, bool loop, sf::SoundBuffer& soundBuffer) 
