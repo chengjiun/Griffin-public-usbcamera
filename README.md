@@ -42,4 +42,7 @@ cd trt_pose
 sudo python3 setup.py install
 cd ~/
 ``` 
+- download ssd-mobilenetV2 model from tf hub 
+    * link: https://tfhub.dev/tensorflow/ssd_mobilenet_v2/2?tf-hub-format=compressed
+    * put it to Python\ Apps/models/ssd/
   
