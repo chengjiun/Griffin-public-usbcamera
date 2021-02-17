@@ -1,4 +1,4 @@
-from .camera import Camera
+from jetcam.camera import Camera
 import atexit
 import cv2
 import numpy as np
@@ -13,10 +13,11 @@ class USBCamera(Camera):
     capture_height = traitlets.Integer(default_value=480)   
     capture_device = traitlets.Integer(default_value=0)
     
-    def __init__(self, *args, **kwargs):
+    def __init__(self, deviceid=0, *args, **kwargs):
         super(USBCamera, self).__init__(*args, **kwargs)
+        print('gst_str()', self._gst_str())
         try:
-            self.cap = cv2.VideoCapture(self._gst_str(), cv2.CAP_GSTREAMER)
+            self.cap = cv2.VideoCapture(deviceid, cv2.CAP_V4L2)
 
             re , image = self.cap.read()
             
